@@ -3,7 +3,14 @@ package mercadodetransferenciabr;
 
 
 public class JanelaAberta extends Estado {
-     @Override
+    private String msgEstado = "aberta";
+    
+    @Override
+    public String getMsgEstado(){
+        return msgEstado;
+    }
+    
+    @Override
     public void transferirJogador(){
         registrarRescisao();
         publicarRescisaoBid();

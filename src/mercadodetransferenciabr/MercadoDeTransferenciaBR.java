@@ -6,7 +6,13 @@ public class MercadoDeTransferenciaBR {
    
     public static void main(String[] args) {
         Janela j = new Janela();
-        j.setJanelaEstado(new JanelaAberta());
+        j.addObservador(new SiteCBF());
+        j.addObservador(new SistemaEmail());
+        
+        j.setEstadoJanela(new JanelaAberta());
+        j.transferirJogador();
+        
+        j.setEstadoJanela(new JanelaFechada());
         j.transferirJogador();
     }
     
