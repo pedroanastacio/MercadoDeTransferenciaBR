@@ -1,21 +1,13 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package mercadodetransferenciabr;
 
-/**
- *
- * @author PedroH
- */
 public class MercadoDeTransferenciaBR {
 
-    /**
-     * @param args the command line arguments
-     */
+   
     public static void main(String[] args) {
-        // TODO code application logic here
+        Janela j = new Janela();
+        j.setJanelaEstado(new JanelaAberta());
+        j.transferirJogador();
     }
     
 }
